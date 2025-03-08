@@ -1,0 +1,160 @@
+/* Background and Body Styles */
+body {
+    display: flex;
+    /* Enable Flexbox layout */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    min-height: 100vh;
+    /* Full viewport height */
+    background-color: #141414;
+    background-image: url('../images/Invite.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: transparent;
+    padding: 10px;
+    text-align: left;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    width: 100%;
+}
+
+nav a.home-link {
+    color: white;
+    /* Link color */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Smooth hover transition */
+}
+
+/* Login Container */
+.login-container {
+    width: 50%;
+    margin: 0 auto;
+    /* Centered container */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Slight transparency for form background */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow effect */
+}
+
+/* Heading Style */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #333;
+    /* Dark background for inputs */
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Adds some depth to the inputs */
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    background-color: #047ed0;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0407d0;
+}
+
+/* Sign-up Link */
+.sign-up {
+    margin-top: 20px;
+}
+
+.sign-up a {
+    color: #ecf09f;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.sign-up a:hover {
+    color: #3d77ed;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        /* Adjusts width for smaller screens */
+        margin: 20px auto;
+    }
+
+    nav a.home-link {
+        font-size: 16px;
+        /* Slightly smaller text for smaller screens */
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: #ccc;
+    /* Change color as needed */
+}
+
+.social-icons a:hover {
+    color: #007bff;
+    /* Change color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .social-icons a {
+        margin: 0 10px;
+        /* Reduce margin on smaller screens */
+        font-size: 20px;
+        /* Smaller font size on mobile */
+    }
+}
+
+@media (max-width: 400px) {
+    .social-icons a {
+        font-size: 18px;
+        /* Further reduce font size on very small screens */
+    }
+}
